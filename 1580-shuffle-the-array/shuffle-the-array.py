@@ -1,12 +1,11 @@
 class Solution:
     def shuffle(self, nums: List[int], n: int) -> List[int]:
-        result = []
-        i = 0
-        j = n
-        while i < n:
-            result.append(nums[i])
-            result.append(nums[j])
-            i += 1
-            j += 1
+        result = [0]*(n*2)
+        
+        for i in range(n*2):
+            if i%2==0:
+                result[i]=nums[i//2]
+            else:
+                result[i]=nums[n+i//2]
         return result
         
