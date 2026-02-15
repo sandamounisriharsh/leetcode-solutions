@@ -7,8 +7,7 @@ class Solution:
                 a+=1 
             else:
                 a=0
-            if a>b:
-                b=a  
+            b=max(a,b)
         
         return b
                           
