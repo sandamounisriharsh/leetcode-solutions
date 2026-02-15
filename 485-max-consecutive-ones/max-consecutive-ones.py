@@ -4,11 +4,12 @@ class Solution:
         b=0
         for i in range(len(nums)):
             if nums[i]==1:
-                a+=1
-                if a>b:
-                    b=a
+                a+=1 
             else:
                 a=0
+            if a>b:
+                b=a  
+        
         return b
                           
         
