@@ -5,9 +5,10 @@ class Solution:
         for i in range(len(nums)):
             if nums[i]==1:
                 a+=1 
+                b=max(a,b)
             else:
                 a=0
-            b=max(a,b)
+            
         
         return b
                           
