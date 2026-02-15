@@ -8,8 +8,6 @@ class Solution:
                 b=max(a,b)
             else:
                 a=0
-            
-        
         return b
                           
         
